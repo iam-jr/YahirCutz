@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>YahirCutz - Tu Barbershop Premium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a1a2e" />
+  <meta name="description" content="YahirCutz - Barbería profesional con los mejores cortes y estilos. Sistema de reserva online.">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo-brand">
+        <img src="img/logo yahir.jpg" alt="YahirCutz" class="logo-img">
+        <span class="brand-name">YahirCutz</span>
+      </div>
+      
+      <ul class="nav-links">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#reservar" class="nav-link">Reservar Cita</a></li>
+        <li><a href="#servicios" class="nav-link">Nuestros Servicios</a></li>
+        <li><a href="#galeria" class="nav-link">Galería</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+      
+      <button class="btn-menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h1 class="hero-title">Barbería Premium</h1>
+      <p class="hero-subtitle">Cortes precisos, estilos modernos, servicio de clase mundial</p>
+      <div class="hero-buttons">
+        <a href="#reservar" class="btn btn-primary">Reserva Tu Cita</a>
+        <a href="https://wa.me/17872131124" class="btn btn-secondary" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="img/yahir logo 2.jpg" alt="YahirCutz" class="hero-img">
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="servicios" id="servicios">
+    <div class="container">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <p class="section-subtitle">Ofertas especiales diseñadas para ti</p>
+      
+      <div class="servicios-grid">
+        <div class="servicio-card">
+          <div class="servicio-icon">✂️</div>
+          <h3>Corte Clásico</h3>
+          <p class="precio">$40</p>
+          <p class="descripcion">Corte profesional con técnicas modernas</p>
+          <button class="btn-servicio" data-service="Corte Clásico" data-price="40" data-duration="45">Seleccionar</button>
+        </div>
+        
+        <div class="servicio-card">
+          <div class="servicio-icon">🧔</div>
+          <h3>Corte + Barba</h3>
+          <p class="precio">$40</p>
+          <p class="descripcion">Corte y barba perfectamente delineada</p>
+          <button class="btn-servicio" data-service="Corte + Barba" data-price="40" data-duration="60">Seleccionar</button>
+        </div>
+        
+        <div class="servicio-card">
+          <div class="servicio-icon">💈</div>
+          <h3>Combo Completo</h3>
+          <p class="precio">$40</p>
+          <p class="descripcion">Corte + Barba Premium con masaje</p>
+          <button class="btn-servicio" data-service="Combo Completo" data-price="40" data-duration="75">Seleccionar</button>
+        </div>
+        
+        <div class="servicio-card highlight">
+          <div class="servicio-icon">🏠</div>
+          <h3>House Call</h3>
+          <p class="precio">$100</p>
+          <p class="descripcion">Te visitamos a domicilio - Servicio premium</p>
+          <button class="btn-servicio" data-service="House Call" data-price="100" data-duration="90">Seleccionar</button>
+        </div>
+        
+        <div class="servicio-card">
+          <div class="servicio-icon">🎨</div>
+          <h3>Diseño Custom</h3>
+          <p class="precio">$40</p>
+          <p class="descripcion">Diseños únicos y personalizados</p>
+          <button class="btn-servicio" data-service="Diseño Custom" data-price="40" data-duration="60">Seleccionar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section class="galeria" id="galeria">
+    <div class="container">
+      <h2 class="section-title">Galería de Cortes</h2>
+      <p class="section-subtitle">Inspírate con nuestros trabajos</p>
+      
+      <div class="galeria-grid">
+        <div class="galeria-item">
+          <img src="img/yahir logo 2.jpg" alt="Corte 1">
+        </div>
+        <div class="galeria-item">
+          <img src="img/yahir logo 3.jpg" alt="Corte 2">
+        </div>
+        <div class="galeria-item">
+          <img src="img/logo yahir.jpg" alt="Corte 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo Reservar -->
+  <section id="como-reservar" style="position:relative; padding: 60px 0;">
+    <div class="container">
+      <article class="intro-message" style="max-width: 800px; margin: 0 auto; text-align: center; padding: 40px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(212, 175, 55, 0.05)); border: 2px solid rgba(212, 175, 55, 0.3); border-radius: 20px;">
+        <h2 style="color: var(--gold); font-size: 2em; margin-bottom: 20px; font-weight: 900;">¿Cómo reservar tu cita Online?</h2>
+        <p style="color: var(--white); font-size: 1.1em; margin-bottom: 25px;">¡Es muy fácil! Solo sigue estos simples pasos:</p>
+        <ol style="text-align: left; max-width: 600px; margin: 0 auto; padding-left: 20px; color: var(--white); line-height: 2;">
+          <li>Selecciona el <strong style="color: var(--gold);">servicio</strong> que deseas.</li>
+          <li>Escoge el <strong style="color: var(--gold);">día</strong> que mejor te convenga.</li>
+          <li>Elige la <strong style="color: var(--gold);">hora</strong> disponible que más te guste.</li>
+          <li>Completa tu <strong style="color: var(--gold);">información personal</strong> para confirmar.</li>
+          <li>Haz clic en <strong style="color: var(--gold);">"Reservar"</strong> para finalizar tu reserva.</li>
+          <li>¡Listo! Recibirás un <strong style="color: var(--gold);">email de confirmación</strong> y podrás agregar la cita a tu calendario.</li>
+        </ol>
+      </article>
+    </div>
+  </section>
+
+  <!-- Reservar -->
+  <section class="reservar" id="reservar">
+    <div class="container">
+      <h2 class="section-title">Reserva Tu Cita</h2>
+      <p class="section-subtitle">Sistema de reservas en 4 pasos</p>
+      
+      <!-- Indicador de Pasos -->
+      <ol class="steps-indicator" style="display: flex; justify-content: center; gap: 20px; margin: 40px 0; list-style: none; padding: 0;">
+        <li class="step-item active" data-step="1" style="display: flex; align-items: center; gap: 8px; padding: 12px 20px; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--black); border-radius: 30px; font-weight: 700; box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);">
+          <span>1. Servicio</span>
+        </li>
+        <li class="step-item" data-step="2" style="display: flex; align-items: center; gap: 8px; padding: 12px 20px; background: rgba(255,255,255,0.1); color: var(--gray-light); border-radius: 30px; font-weight: 700;">
+          <span>2. Fecha</span>
+        </li>
+        <li class="step-item" data-step="3" style="display: flex; align-items: center; gap: 8px; padding: 12px 20px; background: rgba(255,255,255,0.1); color: var(--gray-light); border-radius: 30px; font-weight: 700;">
+          <span>3. Hora</span>
+        </li>
+        <li class="step-item" data-step="4" style="display: flex; align-items: center; gap: 8px; padding: 12px 20px; background: rgba(255,255,255,0.1); color: var(--gray-light); border-radius: 30px; font-weight: 700;">
+          <span>4. Datos</span>
+        </li>
+      </ol>
+      
+      <div class="booking-wrapper">
+        <!-- Paso 1: Servicio -->
+        <div class="booking-step active" id="step1">
+          <h3 class="step-title">1. Servicio</h3>
+          <div class="servicio-select" id="servicioList">
+            <!-- Se llena dinámicamente -->
+          </div>
+        </div>
+
+        <!-- Fecha -->
+        <div class="booking-section" id="fecha-section">
+          <h3 class="section-subtitle">2. Escoge la Fecha</h3>
+          <div class="calendar-container">
+            <div class="month-picker">
+              <button id="prev-month" class="icon-btn" type="button">◀</button>
+              <span id="month-label" class="month-label"></span>
+              <button id="next-month" class="icon-btn" type="button">▶</button>
+            </div>
+            <div id="calendar" class="calendar-grid"></div>
+            <div class="legend" style="display: flex; gap: 15px; justify-content: center; margin-top: 15px; font-size: 0.9em;">
+              <span style="display: flex; align-items: center; gap: 6px; color: var(--white);"><span style="width: 12px; height: 12px; border-radius: 50%; background: var(--gold); display: inline-block;"></span> Disponible</span>
+              <span style="display: flex; align-items: center; gap: 6px; color: var(--white);"><span style="width: 12px; height: 12px; border-radius: 50%; background: var(--accent); display: inline-block;"></span> Hoy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hora -->
+        <div class="booking-section" id="hora-section">
+          <h3 class="section-subtitle">3. Escoge la Hora</h3>
+          <div id="hours" class="hours-grid"></div>
+        </div>
+
+        <!-- Paso 4: Información -->
+        <div class="booking-step" id="step4">
+          <h3 class="step-title">4. Completa Tu Información</h3>
+          <p style="text-align: center; color: var(--gray-light); margin-bottom: 30px;">Ingresa tus datos para confirmar tu cita</p>
+          
+          <form id="booking-form">
+            <div class="form-group">
+              <label for="clientName" style="color: var(--gold); font-weight: 600; margin-bottom: 8px; display: block;">Nombre Completo *</label>
+              <input type="text" id="clientName" placeholder="Ej: Juan Pérez" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="clientEmail" style="color: var(--gold); font-weight: 600; margin-bottom: 8px; display: block;">Correo Electrónico *</label>
+              <input type="email" id="clientEmail" placeholder="tucorreo@email.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="clientPhone" style="color: var(--gold); font-weight: 600; margin-bottom: 8px; display: block;">Teléfono *</label>
+              <input type="tel" id="clientPhone" placeholder="+1 787 213 1124" required pattern="[0-9+\-\s()]+">
+            </div>
+            
+            <div class="form-group">
+              <label for="clientInstagram" style="color: var(--gold); font-weight: 600; margin-bottom: 8px; display: block;">Instagram <span style="color: var(--gray); font-weight: 400;">(Opcional)</span></label>
+              <input type="text" id="clientInstagram" placeholder="@tuusuario">
+            </div>
+            
+            <div class="booking-summary">
+              <h4 style="color: var(--gold); margin-bottom: 15px; font-size: 1.2em;">📋 Resumen de tu Cita</h4>
+              <p><strong>Servicio:</strong> <span id="summary-service">-</span></p>
+              <p><strong>Fecha:</strong> <span id="summary-date">-</span></p>
+              <p><strong>Hora:</strong> <span id="summary-time">-</span></p>
+              <p><strong>Precio:</strong> <span id="summary-price" style="color: var(--accent); font-size: 1.3em;">-</span></p>
+            </div>
+            
+            <label style="display: flex; align-items: flex-start; gap: 12px; margin: 25px 0; padding: 15px; background: rgba(212, 175, 55, 0.05); border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.2); cursor: pointer;">
+              <input type="checkbox" id="optIn" required style="margin-top: 4px;">
+              <span style="color: var(--white); line-height: 1.6;">Acepto recibir la confirmación de mi cita vía email. Mis datos están seguros y solo se usan para confirmar mi cita.</span>
+            </label>
+            
+            <button type="submit" class="btn btn-primary btn-large" style="font-size: 1.1em; padding: 15px 40px; width: 100%; margin-top: 20px;">✓ Confirmar Mi Cita</button>
+          </form>
+          <p id="booking-message" class="booking-message"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <h2 class="section-title">📞 Contáctanos</h2>
+      <p style="text-align: center; color: var(--gray-light); font-size: 1.1rem; margin-bottom: 40px;">Estamos aquí para atenderte. ¡Comunícate con nosotros!</p>
+      
+      <div class="contacto-grid">
+        <div class="contacto-item">
+          <h3>📍 Ubicación</h3>
+          <p>Los Mágicos, Puerto Rico</p>
+        </div>
+        <div class="contacto-item">
+          <h3>📞 Teléfono</h3>
+          <p><a href="tel:+17872131124">+1 (787) 213-1124</a></p>
+        </div>
+        <div class="contacto-item">
+          <h3>📧 Email</h3>
+          <p><a href="mailto:info@yahircutz.com">info@yahircutz.com</a></p>
+        </div>
+        <div class="contacto-item">
+          <h3>⏰ Horario</h3>
+          <p>Mar-Sáb: 8:00 AM - 7:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Políticas y Ética Profesional -->
+  <section id="politicas" style="padding: 80px 0; background: var(--dark-bg);">
+    <div class="container">
+      <h2 class="section-title" style="color: var(--gold); margin-bottom: 50px;">📋 Políticas y Ética Profesional</h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+        
+        <!-- Política 1: Cancelaciones -->
+        <div class="policy-card">
+          <div style="font-size: 3em; margin-bottom: 15px;">⏰</div>
+          <h4 style="color: var(--gold); font-size: 1.2em; margin: 0 0 12px 0; font-weight: 800;">Cancelaciones</h4>
+          <p style="color: var(--gray-light); margin: 0; line-height: 1.7;">Avísanos con <strong style="color: var(--white);">24 horas de anticipación</strong> si no puedes asistir. Tu tiempo vale, el nuestro también.</p>
+        </div>
+        
+        <!-- Política 2: Puntualidad -->
+        <div class="policy-card">
+          <div style="font-size: 3em; margin-bottom: 15px;">⏱️</div>
+          <h4 style="color: var(--gold); font-size: 1.2em; margin: 0 0 12px 0; font-weight: 800;">Puntualidad</h4>
+          <p style="color: var(--gray-light); margin: 0; line-height: 1.7;">Máximo <strong style="color: var(--white);">10 minutos de tolerancia</strong>. Después de eso, tu cita podría ser reprogramada.</p>
+        </div>
+        
+        <!-- Política 3: Métodos de Pago -->
+        <div class="policy-card">
+          <div style="font-size: 3em; margin-bottom: 15px;">💳</div>
+          <h4 style="color: var(--gold); font-size: 1.2em; margin: 0 0 12px 0; font-weight: 800;">Métodos de Pago</h4>
+          <p style="color: var(--gray-light); margin: 0; line-height: 1.7;">Trabajamos con <strong style="color: var(--white);">Efectivo, ATH Móvil y PayPal</strong>. Pago al finalizar tu servicio.</p>
+        </div>
+        
+        <!-- Política 4: Profesionalismo -->
+        <div class="policy-card">
+          <div style="font-size: 3em; margin-bottom: 15px;">✨</div>
+          <h4 style="color: var(--gold); font-size: 1.2em; margin: 0 0 12px 0; font-weight: 800;">Profesionalismo</h4>
+          <p style="color: var(--gray-light); margin: 0; line-height: 1.7;"><strong style="color: var(--white);">Años de experiencia</strong> usando solo productos premium. Cada corte es una obra de arte.</p>
+        </div>
+        
+        <!-- Política 5: Higiene y Seguridad -->
+        <div class="policy-card">
+          <div style="font-size: 3em; margin-bottom: 15px;">🧼</div>
+          <h4 style="color: var(--gold); font-size: 1.2em; margin: 0 0 12px 0; font-weight: 800;">Higiene y Seguridad</h4>
+          <p style="color: var(--gray-light); margin: 0; line-height: 1.7;"><strong style="color: var(--white);">100% esterilizado y desinfectado</strong>. Ambiente limpio que cumple con todos los estándares de salud de PR.</p>
+        </div>
+        
+        <!-- Política 6: Respeto Mutuo -->
+        <div class="policy-card">
+          <div style="font-size: 3em; margin-bottom: 15px;">🤝</div>
+          <h4 style="color: var(--gold); font-size: 1.2em; margin: 0 0 12px 0; font-weight: 800;">Respeto Mutuo</h4>
+          <p style="color: var(--gray-light); margin: 0; line-height: 1.7;"><strong style="color: var(--white);">Ambiente 100% profesional</strong>. Tratamos a cada cliente con respeto absoluto.</p>
+        </div>
+        
+      </div>
+      
+      <!-- Nota destacada -->
+      <div style="
+        margin-top: 50px;
+        padding: 35px 30px;
+        background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 0 60px rgba(212, 175, 55, 0.6);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+      ">
+        <h3 style="margin: 0 0 15px 0; color: var(--black); font-size: 1.5em; font-weight: 900;">
+          ¡Gracias por Tu Confianza!
+        </h3>
+        <p style="margin: 0; color: var(--black); font-size: 1.05em; font-weight: 600; line-height: 1.8;">
+          <strong>YahirCutz</strong> te brinda la mejor calidad y el mejor servicio siempre disponible para ti. ✨
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 30px;">
+        <div>
+          <h4 style="color: var(--gold); margin-bottom: 15px; font-weight: 800;">YahirCutz Barber</h4>
+          <p>Los Mágicos, Puerto Rico</p>
+          <a href="tel:+17872131124" style="display: inline-block; margin-top: 10px; padding: 8px 16px; background: transparent; border: 2px solid var(--gold); color: var(--gold); border-radius: 8px; text-decoration: none; font-weight: 700; transition: all 0.3s;">+1 (787) 213-1124</a>
+          <br>
+          <a href="https://wa.me/17872131124" target="_blank" style="display: inline-block; margin-top: 10px; padding: 8px 16px; background: transparent; border: 2px solid var(--gold); color: var(--gold); border-radius: 8px; text-decoration: none; font-weight: 700; transition: all 0.3s;">WhatsApp directo</a>
+        </div>
+        
+        <div>
+          <h4 style="color: var(--gold); margin-bottom: 15px; font-weight: 800;">Horario</h4>
+          <ul style="list-style: none; padding: 0; color: var(--gray-light);">
+            <li style="margin-bottom: 8px;">Mar–Sáb: 8:00am–7:00pm</li>
+            <li style="margin-bottom: 8px;">Dom–Lun: Cerrado</li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 style="color: var(--gold); margin-bottom: 15px; font-weight: 800;">Confianza</h4>
+          <ul style="list-style: none; padding: 0; color: var(--gray-light);">
+            <li style="margin-bottom: 8px;">⭐ Clientes satisfechos</li>
+            <li style="margin-bottom: 8px;">🔒 Citas seguras</li>
+            <li style="margin-bottom: 8px;">🗓️ Recordatorios via email</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div style="text-align: center; padding-top: 30px; border-top: 1px solid rgba(212, 175, 55, 0.3);">
+        <p>&copy; 2025 YahirCutz. Todos los derechos reservados. Barbero Profesional.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

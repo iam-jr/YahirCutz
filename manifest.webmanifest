@@ -1,0 +1,26 @@
+{
+  "name": "YahirCutz - Sistema de Reservas",
+  "short_name": "YahirCutz",
+  "description": "Reserva tu corte en YahirCutz",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0b12",
+  "theme_color": "#7C3AED",
+  "icons": [
+    {
+      "src": "/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/img/logo.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    }
+  ]
+}
